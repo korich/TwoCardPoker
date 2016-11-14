@@ -41,13 +41,21 @@
 
 ###Feature: Shuffle Deck
 
-####As The Dealer 
-I want to Shuffle the Deck
-So that the card sequence is different for each round
-Scenario: Shuffle Deck X Times
+**As** The Dealer 
+
+**I want to** Shuffle the Deck
+
+**So that** the card sequence is different for each round
+
+**Scenario:** Shuffle Deck X Times
+
 Given it is the start if a new round
+
 And the game is not over
+
 And a deck of 52 cards
+
 When I shuffle the deck X time (s)
+
 Then the deck is in a different order each time
 
